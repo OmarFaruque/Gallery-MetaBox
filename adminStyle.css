@@ -1,0 +1,39 @@
+ul.galleryPriview li.image {
+    max-width: 59.6px;
+    overflow: hidden;
+    float: left;
+    margin-right: 5px;
+    position: relative;
+}
+ul.galleryPriview li.image img{
+	max-width: 100%;
+}
+ul.galleryPriview{
+	display: block;
+	overflow: hidden;
+}
+ul.galleryPriview li.image ul.actions{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+}
+
+ul.galleryPriview li.image ul.actions a {
+    color: rgba(0,0,0,1);
+    padding: 0px;
+    text-decoration: none;
+}
+ul.galleryPriview li.image ul.actions a div {
+    font-size: 20px;
+}
+ul.galleryPriview li.image:hover ul.actions{
+	display: block;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+ul.galleryPriview li.image ul.actions a:hover {
+	color: #9e2600
+}
