@@ -4,7 +4,7 @@
 */
 
 function project_add_meta_box() {
-	add_meta_box('productGallery', __( 'Gallery', 'ABM Water' ), 'product_gallery_callback', 'product', 'side', 'low');
+	add_meta_box('productGallery', __( 'Gallery', 'ABM Water' ), 'product_gallery_callback', 'product', 'side', 'low'); //product is a post type, so you need to change it with your post name, also 'ABM Water' is theme name
 }
 add_action( 'add_meta_boxes', 'project_add_meta_box' );
 
