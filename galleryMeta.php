@@ -3,6 +3,16 @@
 * Meta Box
 */
 
+/*
+* Admin Style
+*/
+add_action( 'admin_enqueue_scripts', 'load_larasoft_admin_styles' );
+function load_larasoft_admin_styles() {
+    wp_enqueue_style( 'admin_codehouse_css', get_template_directory_uri() . '/css/adminStyle.css', false, '4.0.0' );
+}  
+
+
+
 function project_add_meta_box() {
 	add_meta_box('productGallery', __( 'Gallery', 'ABM Water' ), 'product_gallery_callback', 'product', 'side', 'low'); //product is a post type, so you need to change it with your post name, also 'ABM Water' is theme name
 }
